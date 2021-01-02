@@ -42,9 +42,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
+
 .produto, .services, .junte, .revendedores, .contato, footer{
     font-family: 'Poppins', sans-serif;
 }
+
 .home .home-content,
 .produto .produto-content, 
 .services .serv-content,
@@ -95,13 +97,15 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 31px 0px 15px 0px;
     background: var(--amarelo-iop);
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto 0;
 }
 
 .navbar .logo{
@@ -318,7 +322,8 @@ section .title::after{
 /* Junte-se a nós section styling */
 
 .junte .title::after{
-    content: "seja revendedor";
+    content: "revendedor";
+    background: ghostwhite;
 }
 
 .junte .junte-content .left{
@@ -375,9 +380,9 @@ section .title::after{
 /* Revendedores section styling */
 
 .revendedores .title::after{
-    content: "cervejarias";
-    background: ghostwhite;
+    content: "cervejarias";    
 }
+
 .revendedores .carousel .card{
     background: var(--amarelo-iop);
     border-radius: 6px;
@@ -682,8 +687,9 @@ footer span a:hover{
 
 @media (max-width: 690px) {
     .max-width{
-        padding: 0 23px;
+        padding: 0 28px 0 23px;
     }
+
     .home .home-content .text-2{
         font-size: 35px;
     }
@@ -691,7 +697,7 @@ footer span a:hover{
         font-size: 27px;
     }
     .home .home-content a{
-        font-size: 20px;
+        font-size: 18px;
     }
     .services .serv-content .card{
         width: 100%;
@@ -700,6 +706,7 @@ footer span a:hover{
     .home .home-content .right img{
         height: 120px;
         width: 60px;
+        transform: translateX(40%);
     }
 }
 
@@ -709,10 +716,10 @@ footer span a:hover{
     }
 
     .home .home-content .text-1{
-        font-size: 23px;
+        font-size: 20px;
     }
     .home .home-content .text-2{
-        font-size: 27px;
+        font-size: 24px;
     }
     .home .home-content .text-3{
         font-size: 23px;
@@ -720,7 +727,7 @@ footer span a:hover{
 
     .produto .produto-content .right .text,
     .junte .junte-content .left .text{
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .junte .junte-content .left{
@@ -746,4 +753,8 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+@media (max-width: 360px) {
+
 }
